@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Bajak Laut | [KEPIN KING JOMOK]</title>
+    <link href="https://fonts.googleapis.com/css2?family=Almendra+SC&family=Pirata+One&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --op-gold: #f1c40f;
+            --op-red: #c0392b;
+            --op-dark: #1a1a1a;
+            --parchment: #f4e4bc;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--op-dark);
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* --- Background Samudera --- */
+        .ocean-bg {
+            background: linear-gradient(180deg, #1e3799 0%, #0a3d62 100%);
+            min-height: 100vh;
+            padding: 50px 20px;
+        }
+
+        /* --- Header / Navigation --- */
+        nav {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        nav a {
+            color: var(--op-gold);
+            font-family: 'Pirata One', cursive;
+            text-decoration: none;
+            font-size: 1.5rem;
+            margin: 0 20px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: white;
+            text-shadow: 0 0 10px var(--op-red);
+        }
+
+        /* --- Wanted Poster Section --- */
+        .hero {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 80px;
+        }
+
+        .wanted-poster {
+            background-color: var(--parchment);
+            width: 350px;
+            padding: 30px;
+            border: 15px solid #d4a76a;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+            text-align: center;
+            position: relative;
+            transform: rotate(-2deg);
+        }
+
+        .wanted-poster h2 {
+            font-family: 'Almendra SC', serif;
+            font-size: 3rem;
+            margin: 10px 0;
+            letter-spacing: 5px;
+        }
+
+        .profile-img {
+            width: 100%;
+            height: 300px;
+            background-color: #555;
+            border: 5px solid #333;
+            object-fit: cover;
+            filter: sepia(0.5) contrast(1.2);
+        }
+
+        .bounty {
+            font-family: 'Pirata One', cursive;
+            font-size: 2.5rem;
+            color: #222;
+            margin-top: 20px;
+        }
+
+        /* --- Section Perkamen --- */
+        .content-card {
+            background-color: var(--parchment);
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 40px;
+            border-radius: 5px;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+            border-left: 10px solid var(--op-red);
+        }
+
+        h3 {
+            font-family: 'Pirata One', cursive;
+            font-size: 2.5rem;
+            color: var(--op-red);
+            border-bottom: 2px solid #333;
+        }
+
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            list-style: none;
+            padding: 0;
+        }
+
+        .skill-item {
+            background: #333;
+            color: var(--op-gold);
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            padding: 40px;
+            font-family: 'Pirata One', cursive;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="ocean-bg">
+        <nav>
+            <a href="#about">LOG BOOK</a>
+            <a href="#skills">TREASURE</a>
+            <a href="#contact">DEN DEN MUSHI</a>
+        </nav>
+
+        <section class="hero">
+            <div class="wanted-poster">
+                <p style="font-family: 'Almendra SC'; font-weight: bold;">WANTED</p>
+                <p style="font-size: 0.8rem;">DEAD OR ALIVE</p>
+                <img src="Aset/img/avatar.jpg">
+                <h2>KEPIN</h2>
+                <div class="bounty">
+                    RP.200 -
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="content-card">
+            <h3>LOG BOOK: BIOGRAFI</h3>
+            <p>
+                Seorang <b>Fullstack Developer</b> yang sedang berlayar di Grand Line dunia teknologi. 
+                Sama seperti Luffy yang mencari One Piece, saya berambisi menciptakan kode yang paling efisien 
+                dan aplikasi yang luar biasa untuk menjadi "Raja Programmer".
+            </p>
+        </section>
+
+        <section id="skills" class="content-card">
+            <h3>TREASURE: KEAHLIAN</h3>
+            <ul class="skill-list">
+                <li class="skill-item">GOONING / SANGEAN </li>
+                <li class="skill-item">GABUT JIR</li>
+                <li class="skill-item">kepin suka nadia</li>
+                <li class="skill-item">Haki (haosoku)</li>
+                <li class="skill-item">Navigasi Git</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="content-card">
+            <h3>HUBUNGI VIA DEN DEN MUSHI</h3>
+            <p>Hubungi saya untuk aliansi proyek atau sekadar minum sake bersama!</p>
+            <p>📧 Email: wahyuchelvin9@gmail.com</p>
+            <p>🔗 Whatsaap: 085700127293</p>
+        </section>
+
+        <footer>
+            <p>© 2025 | Dibuat dengan semangat Will of D.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
